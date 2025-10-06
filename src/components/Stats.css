@@ -1,0 +1,32 @@
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.stat-item {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+[data-theme='dark'] .stats {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] .stat-item {
+  color: #b0b0b0;
+}
+
+@media (max-width: 640px) {
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

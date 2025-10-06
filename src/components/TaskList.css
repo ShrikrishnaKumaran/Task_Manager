@@ -1,0 +1,16 @@
+.task-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+[data-theme='dark'] .empty-state {
+  color: #666;
+}
